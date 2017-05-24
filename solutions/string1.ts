@@ -15,9 +15,9 @@
 
 function donuts(count){
 	// +++your code here+++
-	let statement: string = Number of donuts ;
+	let statement: string = "Number of donuts" ;
 	if (count >= 10){
-		statement += many;
+		statement += "many";
 	}
 	else{
 		statement += count;
@@ -36,12 +36,27 @@ function both_ends(s){
 	let new_string = s.slice(0,2) + s.slice(-2);
 	return new_string;
 }
+// C. fix_start
+// Given a string s, return a string
+// where all occurences of its first char have
+// been changed to '*', except do not change
+// the first char itself.
+// e.g. 'babble' yields 'ba**le'
+// Assume that the string is length 1 or more.
+// Hint: s.replace(stra, strb) returns a version of string s
+// where all instances of stra have been replaced by strb.
+function fix_start(s){
+	//+++your code here+++
+	let new_string =  s[0] + s.slice(1,).replace(s[0], "*");
+	return new_string;
+}
 
 let button = document.createElement('button');
-button.textContent = Say Hello;
+button.textContent = "Say Hello";
 button.onclick = function() {
     alert(donuts(10));
-    alert(both_ends(Hello));
+    alert(both_ends("Hello"));
+    alert(fix_start("Hello"));
 }
 
 document.body.appendChild(button);
