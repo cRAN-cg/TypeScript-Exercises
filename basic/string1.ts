@@ -39,10 +39,10 @@ function both_ends(s){
 // where all instances of stra have been replaced by strb.
 function fix_start(s){
 	//+++your code here+++
+	return ;
 
 }
-  //+++your code here+++
-  return s[0] + s[1:].replace(s[0], "*")
+
 
 
 let button = document.createElement('button');
