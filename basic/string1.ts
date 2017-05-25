@@ -43,13 +43,27 @@ function fix_start(s){
 
 }
 
+// D. MixUp
+// Given strings a and b, return a single string with a and b separated
+// by a space '<a> <b>', except swap the first 2 chars of each string.
+// e.g.
+//   'mix', pod' -> 'pox mid'
+//   'dog', 'dinner' -> 'dig donner'
+// Assume a and b are length 2 or more.
+function mix_up(a, b){
+	//+++your_code_here+++
+	return;
+}
+
 
 
 let button = document.createElement('button');
 button.textContent = "Say Hello";
 button.onclick = function() {
-    alert(donuts(10));
-    alert(both_ends("Hello"));
+	alert(donuts(10));
+	alert(both_ends("Hello"));
+	alert(fix_start("Hello"));
+	alert(mix_up("google", "microsoft"));
 }
 
 document.body.appendChild(button);
